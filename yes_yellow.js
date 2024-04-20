@@ -1,4 +1,4 @@
-function export(){
+function _export(){
   const sessionStorageValue = sessionStorage.getItem('telegram-mini-apps-launch-params');
   const decodedValue = decodeURIComponent(sessionStorageValue);
   const startIndex = decodedValue.indexOf('tgWebAppData=') + 13;
@@ -9,4 +9,4 @@ function export(){
   return extractedString
 }
 
-export()
+_export()
